@@ -428,6 +428,17 @@
   }
   .ach-link::before { content: '→ '; color: var(--text-faint); }
 
+  .resume-actions { margin-top: 22px; display: flex; gap: 12px; flex-wrap: wrap; }
+.resume-btn {
+  font-family: var(--mono);
+  font-size: 13px;
+  padding: 9px 16px;
+  border: 1px solid var(--amber-dim);
+  color: var(--amber);
+  border-radius: 5px;
+  background: rgba(232,163,61,0.06);
+}
+.resume-btn:hover { background: var(--amber); color: #12151a; text-decoration: none; }
   @media (max-width: 560px) {
     .hero-panel { padding: 28px 20px; }
     .panel { padding: 20px; }
@@ -457,6 +468,10 @@
       <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
       <span class="term-title">saul@portfolio: ~</span>
     </div>
+    <div class="resume-actions">
+  <a class="resume-btn" href="resume.pdf" target="_blank" rel="noopener">View resume</a>
+  <a class="resume-btn" href="resume.pdf" download>Download PDF</a>
+</div>
     <div class="hero-panel">
       <div class="hero-top">
         <img src="photo.jpg" alt="Saul Cyvan Soberano" class="avatar" onerror="this.outerHTML='&lt;div class=&quot;avatar-fallback&quot;&gt;SS&lt;/div&gt;'">
@@ -526,7 +541,9 @@
             <div class="ach-meta">Cisco Networking Academy · DICT-ITU DTC Initiative · completed 22 Sep 2026</div>
             <a class="ach-link" href="https://www.credly.com/badges/203048d4-a7dd-4d02-918b-18573c9ac50a" target="_blank" rel="noopener">Verify on Credly</a>
             <br> <br>
+            <div class="ach-item">
              <span class="ach-icon">[✓]</span>
+          <div class="ach-body">
              <div class="ach-title">Introduction to Modern AI</div>
             <div class="ach-meta">Cisco Networking Academy · DICT-ITU DTC Initiative · completed Sep 23, 2026</div>
              <a class="ach-link" href="https://www.credly.com/badges/7b1668dc-d5f8-4cff-a649-57ac6e1937ef" target="_blank" rel="noopener">Verify on Credly</a>
